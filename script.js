@@ -28,7 +28,7 @@ function atualizarDados() {
                     if (dado == 'img_id') {
                         //imagem
                         //$('#' + dado).attr('src', 'https://assets.hgbrasil.com/weather/images/' + valor + '.png');
-                        $('#' + dado).css('background', 'url(https://assets.hgbrasil.com/weather/images/' + valor + '.png)');
+                        $('#' + dado).css('background', 'url(https://cors.io/?https://assets.hgbrasil.com/weather/images/' + valor + '.png)');
                     }
                     else if (dado == 'condition_slug') {
                         //Cor do dia corrente
