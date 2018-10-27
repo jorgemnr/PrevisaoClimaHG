@@ -27,7 +27,8 @@ function atualizarDados() {
                 if (dado !== 'forecast') {
                     if (dado == 'img_id') {
                         //imagem
-                        $('#' + dado).attr('src', 'https://assets.hgbrasil.com/weather/images/' + valor + '.png');
+                        //$('#' + dado).attr('src', 'https://assets.hgbrasil.com/weather/images/' + valor + '.png');
+                        $('#' + dado).css('background', 'url(https://assets.hgbrasil.com/weather/images/' + valor + '.png)');
                     }
                     else if (dado == 'condition_slug') {
                         //Cor do dia corrente
@@ -42,12 +43,7 @@ function atualizarDados() {
                     //previsão futura
                     for (let i = 0; i < 3; i++) {
                         $.each(dados.results.forecast[i], function (dadoPrev, valorPrev) {
-                            if (dadoPrev == 'img_id') {
-                                //imagem
-                                $('#' + dadoPrev).attr('src', 'https://assets.hgbrasil.com/weather/images/' + valorPrev + '.png');
-                            }
-                            else if (dadoPrev == 'condition') {
-                                console.log(dadoPrev + i + '-' + valorPrev)
+                            if (dadoPrev == 'condition') {
                                 //Cor do dia
                                 $('#' + dadoPrev + i).addClass(valorPrev);
                             }
