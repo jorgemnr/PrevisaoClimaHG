@@ -1,0 +1,159 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
+body {
+    margin: 1rem 4vw;
+}
+
+h1, #temp {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#linhaErro {
+    display: none;
+}
+
+#erro {
+    font-size: 1.5rem;
+    color: red;
+    padding: 1rem;
+}
+
+#city_name {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#pAtualizacao {
+    text-align: right;
+    padding-top: 0.5rem;
+    ;
+}
+
+.pPrevisao {
+    font-size: 1rem;
+    color: blue;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.pMaxMin {
+    margin: 0;
+}
+
+#condition_slug {
+    display: flex;
+    margin: auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    max-width: 45rem;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#img_id {
+    height: auto;
+    width: 150%;
+}
+
+#tabDiaAtual {
+    text-align: center;
+    flex-grow: 1;
+    margin: 1rem;
+}
+
+#tabDiaAtual td {
+    width: 80px;
+}
+
+#tabDiaAtual p {
+    margin: 0;
+}
+
+#containerPrevisao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+#containerPrevisao article {
+    display: flex;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    flex-grow: 1;
+    margin: 0.5rem 0.25rem;
+}
+
+#containerPrevisao #imagemDoDia {
+    width: 120px;
+    height: 70px;
+    overflow: hidden;
+}
+
+div {
+    align-self: center;
+}
+
+.clear_day {
+    background-color: #217CAF;
+    color: white;
+}
+
+.clear_night {
+    background-color: #000;
+    color: white;
+}
+
+.cloudly_day, .fog, .rain, .storm {
+    background-color: #ddd;
+}
+
+.cloud {
+    background-color: rgb(180, 180, 180);
+    color: white;
+}
+
+.cloudly_night {
+    background-color: #444;
+    color: white;
+}
+
+/*
+Classes que são adicionadas de acordo com a condição climática:
+
+storm (tempestade)
+snow (neve)
+hail (granizo)
+rain (chuva)
+fog (neblina)
+clear_day (ensolarado)
+clear_night (estrelado)
+cloud (nublado)
+cloudly_day (nublado com sol)
+cloudly_night (nublado com estrelas)
+none_day (erro, mas esta de dia)
+none_night (erro, mas esta de noite)
+*/

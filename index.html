@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <section id="condition_slug">
+        <table id="tabDiaAtual">
+            <tbody>
+                <tr id="linhaErro">
+                    <td colspan="3">
+                        <p id="erro">Erro</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p id="city_name">Cidade</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <h1><span id="temp">0</span>°</h1>
+                        <h2 id="description">Descrição</h2>
+                    </td>
+                    <td colspan="2">
+                        <img alt="imagemDoDia" id="img_id" src="https://assets.hgbrasil.com/weather/images/44.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Data</h3>
+                        <p id="date">00/00/0000</p>
+                    </td>
+                    <td>
+                        <h3>Umidade</h3>
+                        <p><span id="humidity">0</span>%</p>
+                    </td>
+                    <td>
+                        <h3>Vento</h3>
+                        <p id="wind_speedy">0 km/h</p>
+                    </td>
+                    <!--  <td>
+                        <h3>Nascer</h3>
+                        <p id="sunrise">00:00 pm</p>
+                    </td>
+                    <td>
+                        <h3>Pôr</h3>
+                        <p id="sunset">00:00 pm</p>
+                    </td> -->
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p id="pAtualizacao">Atualizado às <span id="time">00:00</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <section id="containerPrevisao">
+        <article id="condition0">
+            <div>
+                <p class="pPrevisao" id="weekday0">Dia</p>
+                <p class="pMaxMin" id="description0">Descrição</p>
+                <p class="pMaxMin">Máxima <span id="max0">00</span>° - Mínima <span id="min0">00</span>°</p>
+            </div>
+        </article>
+        <article id="condition1">
+            <div>
+                <p class="pPrevisao" id="weekday1">Dia</p>
+                <p class="pMaxMin" id="description1">Descrição</p>
+                <p class="pMaxMin">Máxima <span id="max1">00</span>° - Mínima <span id="min1">00</span>°</p>
+            </div>
+        </article>
+        <article id="condition2">
+            <div>
+                <p class="pPrevisao" id="weekday2">Dia</p>
+                <p class="pMaxMin" id="description2">Descrição</p>
+                <p class="pMaxMin">Máxima <span id="max2">00</span>° - Mínima <span id="min2">00</span>°</p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
