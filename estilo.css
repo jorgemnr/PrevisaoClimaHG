@@ -6,6 +6,9 @@
 
 body {
     margin: 1rem 4vw;
+    background-image: url(fundo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, #temp {
@@ -13,18 +16,14 @@ h1, #temp {
     margin-bottom: 1rem;
 }
 
-h2 {
-    font-size: 1rem;
-    margin: 0;
-}
-
-h3 {
-    font-size: 1rem;
+h2, h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
     margin: 0;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #linhaErro {
@@ -40,6 +39,7 @@ p {
 #city_name {
     font-weight: bolder;
     font-size: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 #pAtualizacao {
@@ -127,12 +127,24 @@ div {
     color: white;
 }
 
-.cloudly_day, .fog, .rain, .storm {
+.cloudly_day {
     background-color: #ddd;
 }
 
+.fog {
+    background-color: rgb(204, 204, 204);
+}
+
+.rain {
+    background-color: rgb(194, 194, 194);
+}
+
+.storm, .hail {
+    background-color: rgb(165, 165, 165);
+}
+
 .cloud {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(150, 150, 150);
     color: white;
 }
 
