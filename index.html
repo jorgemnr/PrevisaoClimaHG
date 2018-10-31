@@ -5,87 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="estilo.css">
-    <title>Previsão do Tempo</title>
+    <title>Previsão Clima</title>
 </head>
 
 <body>
-    <section id="condition_slug">
-        <table id="tabDiaAtual">
-            <tbody>
-                <tr id="linhaErro">
-                    <td colspan="3">
-                        <p id="erro">Erro</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p id="city_name">Cidade</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="1">
-                        <h1><span id="temp">0</span>°</h1>
-                        <h2 id="description">Descrição</h2>
-                    </td>
-                    <td colspan="2">
-                        <div id="img_id">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Data</h3>
-                        <p id="date">00/00/0000</p>
-                    </td>
-                    <td>
-                        <h3>Umidade</h3>
-                        <p><span id="humidity">0</span>%</p>
-                    </td>
-                    <td>
-                        <h3>Vento</h3>
-                        <p id="wind_speedy">0 km/h</p>
-                    </td>
-                    <!--  <td>
-                        <h3>Nascer</h3>
-                        <p id="sunrise">00:00 pm</p>
-                    </td>
-                    <td>
-                        <h3>Pôr</h3>
-                        <p id="sunset">00:00 pm</p>
-                    </td> -->
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p id="pAtualizacao">Atualizado às <span id="time">00:00</span></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <section>
+        <article id="previsaoAtual">
+            <h1 id="name">Cidade</h1>
+            <h3 id="country">País</h3>
+            <p id="icon">Ícone</p>
+            <img src="1.jpg" alt="">
+            <p id="condition">Poucas nuvens</p>
+            <p id="pTemperature">Temp. Atual<span id="temperature"></span> °C</p>
+            <p id="pSensation">Sens. Temp. Atual<span id="sensation"></span>°</p>
+            <!-- <p id="PHumidity">Humidade<span id="humidity"></span>%</p> -->
+            <p id="pTemperatureMin"><span id="temperature-min">Temp. Min.</span> °C</p>
+            <p id="pTemperatureMax"><span id="temperature-max">Temp. Max.</span> °C</p>
+            <p id="pProbabChuva"><span id="rain-probability">Probab. Chuva</span> %</p>
+            <p id="pPrecipChuva"><span id="rain-precipitation">Precip.Chuva</span> mm</p>
 
-    </section>
-    <section id="containerPrevisao">
-        <article id="condition0">
             <div>
-                <p class="pPrevisao" id="weekday0">Dia</p>
-                <p class="pMaxMin" id="description0">Descrição</p>
-                <p class="pMaxMin">Máxima <span id="max0">00</span>° - Mínima <span id="min0">00</span>°</p>
+
+
             </div>
+
+            <p id="date">Data/Hora atualização</p>
         </article>
-        <article id="condition1">
-            <div>
-                <p class="pPrevisao" id="weekday1">Dia</p>
-                <p class="pMaxMin" id="description1">Descrição</p>
-                <p class="pMaxMin">Máxima <span id="max1">00</span>° - Mínima <span id="min1">00</span>°</p>
-            </div>
-        </article>
-        <article id="condition2">
-            <div>
-                <p class="pPrevisao" id="weekday2">Dia</p>
-                <p class="pMaxMin" id="description2">Descrição</p>
-                <p class="pMaxMin">Máxima <span id="max2">00</span>° - Mínima <span id="min2">00</span>°</p>
-            </div>
+        <!-- <article id="previsao24Horas">
+            <header>
+                Previsão 24 horas
+            </header>
+            <p id="date">Data/Hora</p>
+            <p id="temperature">Temperatura</p>
+            <p id="precipitation">Precipitação em milímetro.</p>
+        </article> -->
+        <article id="previsao10Dias">
+            <header>
+                Previsão 10 dias
+            </header>
+            <table>
+                <tbody>
+                    <td>
+                        <p id="date">Data</p>
+                    </td>
+                    <td>
+                        <p id="probability">Probabilidade de chuva em porcentagem.</p>
+                    </td>
+                    <td>
+                        <p id="precipitation">Precipitação em milímetro.</p>
+                    </td>
+                    <td>
+                        <p id="temperature-min">temperature-min</p>
+                    </td>
+                    <td>
+                        <p id="temperature-max">temperature-max</p>
+                    </td>
+                </tbody>
+            </table>
         </article>
     </section>
 </body>
