@@ -1,57 +1,171 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
 body {
-    /* background-image: url(fundo.png);
+    margin: 1rem 4vw;
+    background-image: url(fundo.jpg);
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
 }
 
-section {
+h1, #temp {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2, h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+#linhaErro {
+    display: none;
+}
+
+#erro {
+    font-size: 1.5rem;
+    color: red;
+    padding: 1rem;
+}
+
+#city_name {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+#pAtualizacao {
+    text-align: right;
+    padding-top: 0.5rem;
+    ;
+}
+
+.pPrevisao {
+    font-size: 1rem;
+    color: blue;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.pMaxMin {
+    margin: 0;
+}
+
+#condition_slug {
     display: flex;
-    flex-flow: row wrap;
+    margin: auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    max-width: 45rem;
+    justify-content: center;
+    border-radius: 5px;
 }
 
-#previsaoAtual {
-    margin: 1rem;
-    /* min-width: 20rem; */
-    /* max-width: 25rem; */
-    
-    font-size: 1rem;
-    padding: 0.5rem;
+#img_id {
+    width: 173px;
+    height: 144px;
+}
+
+#tabDiaAtual {
+    text-align: center;
     flex-grow: 1;
-    flex-basis: 20rem;
-    border: black 1pt solid;
-}
-
-#name {
-    font-size: 2.5rem;
-}
-
-/* #previsao24Horas {
     margin: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tabDiaAtual td {
+    width: 80px;
+}
+
+#tabDiaAtual p {
+    margin: 0;
+}
+
+#containerPrevisao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+#containerPrevisao article {
+    display: flex;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    flex-grow: 1;
+    margin: 0.5rem 0.25rem;
+}
+
+#containerPrevisao #imagemDoDia {
+    width: 120px;
+    height: 70px;
+    overflow: hidden;
+}
+
+div {
+    align-self: center;
+}
+
+.clear_day {
+    background-color: #217CAF;
     color: white;
-    font-size: 1rem;
-    padding: 0.5rem;
-    flex-grow: 0.5;
-    flex-basis: 20rem;
-} */
+}
 
-#previsao10Dias {
-    margin: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+.clear_night {
+    background-color: #000;
     color: white;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-bottom: white 1pt dashed;
 }
 
-#previsao10Dias table td {
-    width: 9rem;
+.cloudly_day {
+    background-color: #ddd;
 }
 
-header {
-    border-bottom: white 1pt solid;
-    padding: 0.3rem 0 0.2rem 0;
+.fog {
+    background-color: rgb(204, 204, 204);
 }
+
+.rain {
+    background-color: rgb(194, 194, 194);
+}
+
+.storm, .hail {
+    background-color: rgb(165, 165, 165);
+}
+
+.cloud {
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
+.cloudly_night {
+    background-color: #444;
+    color: white;
+}
+
+/*
+Classes que são adicionadas de acordo com a condição climática:
+
+storm (tempestade)
+snow (neve)
+hail (granizo)
+rain (chuva)
+fog (neblina)
+clear_day (ensolarado)
+clear_night (estrelado)
+cloud (nublado)
+cloudly_day (nublado com sol)
+cloudly_night (nublado com estrelas)
+none_day (erro, mas esta de dia)
+none_night (erro, mas esta de noite)
+*/
